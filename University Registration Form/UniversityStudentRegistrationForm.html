@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin:auto;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Sukkur IBA Registration Form</h1>
+        <img src="SIBA_Logo.jpg" alt="IBA img" height="100" width="100">
+    </header>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+        
+            <br>
+            <label for="fullname">Full Name:</label>
+            <input type="text" 
+                    placeholder="Enter your full name" 
+                    required 
+                    name="full_name"
+                    id="fullname">
+            <br><br>
+            <label for="fathername">Father Name:</label>
+            <input type="text" 
+                    placeholder="Enter your father name" 
+                    name="father_name" 
+                    required 
+                    id="fathername">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" 
+                    placeholder="example@gmail.com" 
+                    name="email" 
+                    id="email"
+                    required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" 
+                    placeholder="********" 
+                    name="password" 
+                    id="password" 
+                    required 
+                    minlength="8" 
+                    maxlength="16">
+            <br><br>
+            <label for="phone">Phone Number: </label>
+            <input type="tel" 
+                    pattern="[0-9]{11}" 
+                    placeholder="03XX-XXXXXXX" 
+                    id="phone"
+                    name="phone_number" 
+                    required>
+            <br><br>
+            <label for="dob">Date of Birth: </label>
+            <input type="date"
+                    id="dob" 
+                    name="date_of_birth"
+                    required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+        <br><br>
+        <div>
+            <label for="rollnumber">Roll Number: </label>
+            <input type="text" 
+                    id="rollnumber"
+                    name="roll_number" 
+                    required>
+            <br><br>
+            <label for="department">Department:</label>
+            <select id="department"  
+                    name="department"
+                    required>
+                <option value="">Select your department</option>
+                <option value="cs">Computer Science</option>
+                <option value="media&communication">Media & Communication</option>
+                <option value="bba">BBA</option>
+                <option value="bed">B.Ed</option>
+                <option value="cse">Computer Science Engineering</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="math">Mathematics</option>
+            </select>
+            <br><br>
+            <label for="semes">Semester: </label>
+            <select name="semester" 
+                    id="semester" 
+                    required>
+                <option value="">Select your semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <br><br>
+            <label>Gender: </label>
+            <input type="radio" 
+                    name="gender" 
+                    id="male" 
+                    value="Male" 
+                    required>Male
+            <input type="radio" 
+                    name="gender" 
+                    id="female" 
+                    value="Female" 
+                    required>Female
+            <br><br>
+            <label for="address">Address: </label>
+            <textarea name="address" 
+                    id="address" 
+                    required 
+                    rows="4" 
+                    cols="30"></textarea>
+            <br><br>
+            <label for="pic">Profile Picture</label>
+            <input type="file" 
+                    id="pic"
+                    name="profile_picture"
+                    accept=".jpeg,.png,.jpg"
+                    required>
+            <br><br>
+            <input type="submit"
+                    value="Register">
+            <input type="reset" 
+                    value="Clear">
+        </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
