@@ -1,0 +1,34 @@
+.h1{
+    text-align: center;
+}
+table,th,td{
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    align-self: auto;
+
+}
+table{
+    width: 100%;
+}
+th,td{
+    padding: 10px;
+}
+th{
+    background-color: green;
+    color: white;
+}
+td{
+    background-color: #8FBC8F;
+    color:darkblue;
+}
+body{
+    background-color: lightseagreen;
+}
+.header{
+    background-color: green;
+}
+tfoot{
+    font-weight: bold;
+}
